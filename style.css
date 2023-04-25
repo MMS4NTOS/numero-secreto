@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root {
+    --font-family: 'Bruno Ace', cursive;
+    --bg-color: #19376D;
+    --p-color: #A5D7E8;
+    --white: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--p-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.mensagem {
+    font-size: 1.3em;
+}
+
+.box {
+    border: 2px solid var(--white);
+    color: var(--white);
+    display: inline-block;
+    border-radius: 0.1875rem;
+    margin: 0.5em;
+    padding: 0.2em;
+    font-size: 1.5em;
+}
+
+#novo-jogo {
+    padding: 0.5rem 2rem;
+    font-family: var(--font-family);
+    font-size: 1.3em;
+    background-color: transparent;
+    color: var(--p-color);
+    border: 0.125rem solid var(--white);
+    border-radius: 2rem;
+}
