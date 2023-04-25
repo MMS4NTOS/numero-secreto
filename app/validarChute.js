@@ -24,13 +24,20 @@ function validarChute(chute) {
             <h3>O Número secreto era ${numeroSecreto}</h3>
             <button id="novo-jogo"> Jogar Novamente </button>
         `
+        document.querySelector("#novo-jogo").addEventListener("click", () => {
+          window.location.reload();
+        });
     }
     if (tentativas === 0) {
         document.body.style.backgroundColor = 'red'
         document.body.innerHTML = `<h1> GAME OVER </h1>
          <h3> Suas tentativas acabaram. O número secreto era ${numeroSecreto} </h3>
          <button id="novo-jogo"> Jogar Novamente </button>
-        `;
+        `
+        document.querySelector("#novo-jogo").addEventListener("click", () => {
+          window.location.reload();
+        });
+        ;
     }
     else if (numero > numeroSecreto) {
     tentativas--
@@ -45,12 +52,11 @@ function validarChute(chute) {
 
 }
 
-document.body.addEventListener('click', e => {
-    if (e.target.id == 'novo-jogo') {
-        window.location.reload();
-    }
-})
+// document.body.addEventListener('click', e => {
+//     if (e.target.id == 'novo-jogo') {
+//         window.location.reload();
+//     }
+// })
 
-// const botao = document.querySelector("#novo-jogo")
-// botao.addEventListener("click", () => { window.location.reload() });
+ 
 
